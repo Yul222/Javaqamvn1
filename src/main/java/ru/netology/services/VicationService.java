@@ -9,7 +9,7 @@ public class VicationService {
         for (int month = 0; month < 12; month++) {
             if (money >= treshold) { // можем ли отдыхать?
                 count++; // увеличиваем счётчик месяцев отдыха
-                money = money - expenses;
+                money = income - expenses;
             } else {
                 money = (money + income)/3;
             }

@@ -15,9 +15,10 @@ public class VicationServiceTest {
     })
     public void testVication (int count, int income, int expenses, int treshold) {
         VicationService service = new VicationService();
+        int expected = count;
         int actual = service.calculate (income, expenses, treshold);
 
-        Assertions.assertEquals (count, actual);
+        Assertions.assertEquals (expected, actual);
 
     }
 }
