@@ -7,11 +7,12 @@ public class VicationService {
         int money = 0; // количество денег на счету
 
         for (int month = 0; month < 12; month++) {
+
             if (money >= treshold) { // можем ли отдыхать?
                 count++; // увеличиваем счётчик месяцев отдыха
                 money = income - expenses;
             } else {
-                money = (money + income)/3;
+                money = money + income-expenses;
             }
         }
         return count;
