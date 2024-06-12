@@ -14,11 +14,11 @@ public class VicationServiceTest {
             "2, 100000, 60000, 150000"
 
     })
-    public void testVication (int expected, int income, int expenses, int treshold) {
+    public void testVication(int expected, int income, int expenses, int treshold) {
         VicationService service = new VicationService();
-        int actual = service.calculate (income, expenses, treshold);
+        int actual = service.calculate(income, expenses, treshold);
 
-        Assertions.assertEquals (expected, actual);
+        Assertions.assertEquals(expected, actual);
 
     }
 }

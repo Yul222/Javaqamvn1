@@ -10,9 +10,9 @@ public class VicationService {
 
             if (money >= treshold) { // можем ли отдыхать?
                 count++; // увеличиваем счётчик месяцев отдыха
-                money = income - expenses;
+                money = (income - expenses) / 3;
             } else {
-                money = money + income-expenses;
+                money = money + income - expenses;
             }
         }
         return count;
